@@ -1,0 +1,104 @@
+.table {
+    border: 1px solid rgba($primary, .4);
+    border-radius: $border-radius;
+    overflow: hidden;
+    color: $titletext;
+    background: $white;
+    margin-bottom: 30px;
+    @if $enable-shadows==true {
+        @include shadow-mixin($box-shadow);
+    }
+    &.table-dark {
+        background: $dark-body-bg;
+        color: $white;
+        td {
+            border-color: $dark-border-color;
+        }
+    }
+    span,
+    p {
+        color: $bodytext;
+    }
+    .ligth {
+        th {
+            padding: .50rem 1.5rem;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            background: $primary;
+            color: color-yiq(rgba($primary, .8));
+            border-top: 0px;
+            font-weight: 700 !important;
+        }
+    }
+    td {
+        padding: 1.25rem 1.875rem;
+        border-top: 0px;
+        border-bottom: 1px solid $border-color;
+    }
+    .badge {
+        padding: .375rem .75rem;
+    }
+    @each $color,
+    $value in $theme-colors {
+        .badge-#{$color} {
+            color: darken($value, 30%) !important;
+            font-size: 90%;
+        }
+    }
+}
+
+// Table cSS
+.email-chimp {
+    .table {
+        thead {
+            th {
+                border: none;
+                background: $primary;
+                color: $white;
+                text-align: left;
+                padding: 0.65rem 1.875rem;
+                span {
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    margin: 0px;
+                    line-height: 1.5;
+                    color: $white;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        th {
+            border: none;
+        }
+        td {
+            border: none;
+        }
+    }
+}
+
+.basic-table {
+    thead {
+        th {
+            border: none;
+            background: $primary;
+            color: $white;
+            text-align: left;
+            padding: 0.65rem 1.875rem;
+            span {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 500;
+                margin: 0px;
+                line-height: 1.5;
+                color: $white;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    th {
+        border: none;
+    }
+    td {
+        border: none;
+    }
+}

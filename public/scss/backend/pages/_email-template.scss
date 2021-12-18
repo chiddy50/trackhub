@@ -1,0 +1,64 @@
+.template-wrapper {
+    .template-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        img {
+            height: 60px;
+            width: 60px;
+            margin-right: 10px;
+        }
+    }
+    .template-title {
+        margin: 30px 0;
+        text-align: center;
+        font-size: $h2-font-size;
+        color: $titletext;
+        font-weight: 600;
+    }
+    .template-image {
+        margin: 30px 0;
+        img {
+            border-radius: $border-radius;
+        }
+    }
+    .template-description {
+        .title {
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.5;
+            letter-spacing: 1.2px;
+        }
+    }
+    .template-action {
+        margin: 30px 0;
+        text-align: center;
+    }
+    .template-footer {
+        margin: 30px 0;
+        .address {
+            
+        }
+    }
+}
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .links {
+        display: flex;
+        padding: 0;
+        li {
+            list-style: none;
+        }
+        li:last-child {
+            margin-left: .75rem;
+            padding-left: .75rem;
+            border-left: 1px solid $light;
+        }
+    }
+
+}
